@@ -24,7 +24,11 @@ Android Notes Application مبني باستخدام Kotlin يتيح للمستخ
 ---
 
 ## 📂 Project Structure
-
+com.example.notesapplication 
+│ ├── data        
+# models / database ├── ui          
+# activities / adapters ├── utils       
+# helpers
 ---
 
 ## 📸 Screenshots
