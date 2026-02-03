@@ -39,3 +39,9 @@ com.example.notesapplication
 1. Clone projec:
    `bash
    git clone https://github.com/AbdeltawabShabaan/NotesApplication.git
+
+---
+
+##👨‍💻 Author
+-Abdeltawab Shabaan
+-GitHub: https://github.com/AbdeltawabShabaan
