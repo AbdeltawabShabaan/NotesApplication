@@ -5,11 +5,11 @@ Android Notes Application مبني باستخدام Kotlin يتيح للمستخ
 ---
 
 ## 🚀 Features
-- ➕ add new note
--✏️ Update New Notes
--🗑️Delete Notes
--📋Show All Notes In RecyclerView
--💾Save Date Locale
+- add new note➕
+- Update New Notes✏️
+- Delete Notes🗑️
+- Show All Notes In RecyclerView📋
+- Save Date Locale💾
   
 ---
 
