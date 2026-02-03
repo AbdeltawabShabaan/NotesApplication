@@ -43,5 +43,5 @@ com.example.notesapplication
 ---
 
 ## 👨‍💻 Author
--Abdeltawab Shabaan
--GitHub: https://github.com/AbdeltawabShabaan
+- Abdeltawab Shabaan
+- GitHub: https://github.com/AbdeltawabShabaan
