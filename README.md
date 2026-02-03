@@ -1,0 +1,37 @@
+# 📝 Notes Application
+
+Android Notes Application مبني باستخدام Kotlin يتيح للمستخدم إنشاء وإدارة الملاحظات بسهولة.
+
+---
+
+## 🚀 Features
+- ➕ add new note
+-✏️ Update New Notes
+-🗑️Delete Notes
+-📋Show All Notes In RecyclerView
+-💾Save Date Locale
+  
+---
+
+## 🛠 Tech Stack
+- Kotlin
+- Android SDK
+- RecyclerView
+- ViewBinding
+- Room Database 
+- MVVM Architecture 
+
+---
+
+## 📂 Project Structure
+
+---
+
+## 📸 Screenshots
+
+---
+
+## ▶️ How to Run
+1. Clone projec:
+   `bash
+   git clone https://github.com/AbdeltawabShabaan/NotesApplication.git
