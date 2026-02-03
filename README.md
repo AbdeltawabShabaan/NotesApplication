@@ -42,6 +42,6 @@ com.example.notesapplication
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 -Abdeltawab Shabaan
 -GitHub: https://github.com/AbdeltawabShabaan
