@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.notes.database.model.NotesData
 
-@Database(entities = [NotesData::class], version = 1)
+@Database(entities = [NotesData::class], version = 2)
 abstract class NoteDatabase :RoomDatabase() {
     abstract fun getNotDao():NoteDao
     companion object{

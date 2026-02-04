@@ -7,10 +7,12 @@ import androidx.lifecycle.lifecycleScope
 import com.example.notes.database.NoteDatabase
 import com.example.notes.database.model.NotesData
 import com.example.notes.databinding.ActivityUpdateNoteBinding
+import com.example.notes.viewmodel.NoteVIewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class UpdateNoteActivity : AppCompatActivity() {
+    lateinit var vIewModel: NoteVIewModel
     private lateinit var binding: ActivityUpdateNoteBinding
     private lateinit var noteDatabase: NoteDatabase
 
@@ -19,6 +21,7 @@ class UpdateNoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         noteDatabase=NoteDatabase.getInstance(this)
+        vIewModel= NoteVIewModel(application)
         val noteId=intent.getIntExtra("note_id",-1)
         val noteTitle=intent.getStringExtra("note_title")
         val noteDescription=intent.getStringExtra("note_description")
@@ -34,7 +37,7 @@ class UpdateNoteActivity : AppCompatActivity() {
             val note=NotesData(noteId,title,description)
             if (title.isNotEmpty() && description.isNotEmpty()){
                 lifecycleScope.launch(Dispatchers.IO) {
-                    noteDatabase.getNotDao().updateNote(note)
+                    vIewModel.updateNote(note)
                 }
                 finish()
                 Toast.makeText(this,"update succeed",Toast.LENGTH_SHORT).show()
@@ -43,8 +46,5 @@ class UpdateNoteActivity : AppCompatActivity() {
             }
 
         }
-
-//        val note=noteDatabase.getNotDao().updateNota()
-//        binding.updateTitleEditText.setText(note.)
     }
 }

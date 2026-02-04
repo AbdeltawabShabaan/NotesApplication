@@ -1,5 +1,6 @@
 package com.example.notes.database
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -11,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface NoteDao {
     @Query("SELECT * FROM note_table ORDER BY id ASC")
-    fun getAll(): List<NotesData>
+    fun getAll(): LiveData<List<NotesData>>
 
     @Insert
     fun insertNote(notesData: NotesData)

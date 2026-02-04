@@ -11,5 +11,7 @@ data class NotesData(
     @ColumnInfo
     val title:String?=null,
     @ColumnInfo
-    val description:String?=null
+    val description:String?=null,
+    @ColumnInfo
+    val date:Long=System.currentTimeMillis()
 )
